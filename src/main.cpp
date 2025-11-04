@@ -1,4 +1,5 @@
 #include <iostream>
+#include "../include/Demanda.h"
 
 int main() {
     /*
@@ -16,19 +17,29 @@ int main() {
         std::cin >> parametros[i];
     }
 
+    //Recebe as demandas
     int numDemandas;
     
     std::cin >> numDemandas;
 
-    //Recebe as demandas
+    Demanda v[numDemandas];
+    
     int id, tempo;
-    double origemX, origemY, destinoX, destinoY;
-    while(std::cin >> id >> tempo >> origemX >> origemY >> destinoX >> destinoY) {
-        std::cout << "id: " << id;
-        std::cout << ", origem: {" << origemX << "," << origemY << "}";
-        std::cout << ", destino: {" << destinoX << "," << destinoY << "}";
-        std::cout << ", tempo: " << tempo << std::endl;
+    Ponto origem;
+    Ponto destino;
+
+    for(int i = 0; i < numDemandas; ++i) {
+        std::cin >> id >> tempo >> origem.x >> origem.y >> destino.x >> destino.y;
+        v[i] = Demanda(id, tempo, origem, destino);
     }
 
+    //Printa as informações recebidas para fins de debug
+    for(int i = 0; i < 6; ++i) {
+        std::cout << "Parâmetro " << i + 1 << ": " << parametros[i] << std::endl;
+    }
+
+    for(int i = 0; i < numDemandas; ++i) {
+        v[i].printaDemanda();
+    }
     return 0;
 }
