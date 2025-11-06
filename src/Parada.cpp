@@ -37,11 +37,11 @@ void Parada::imprimeLista() {
 
 Parada::~Parada() {
     No* atual = inicio;
-    No* proximoNo = nullptr;
+    No* aux = nullptr;
     while(atual != nullptr) {
-        proximoNo = atual->prox;
+        aux = atual->prox;
         delete atual;
-        atual = proximoNo;
+        atual = aux;
     }
     inicio = nullptr;
     fim = nullptr;

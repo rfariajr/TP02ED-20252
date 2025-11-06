@@ -1,0 +1,2 @@
+- Alterar todas a variaveis relacionadas ao tempo para double
+- Alterar o tad Parada. Uma Parada é um par (origem - destino) para cada corrida
