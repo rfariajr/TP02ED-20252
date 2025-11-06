@@ -26,7 +26,8 @@ int main() {
 
     Demanda v[numDemandas];
     
-    int id, tempo;
+    int id;
+    double tempo;
     Ponto origem;
     Ponto destino;
 

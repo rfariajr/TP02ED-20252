@@ -2,12 +2,12 @@
 #include "../include/Demanda.h"
 
 Demanda::Demanda()
-    : id(-1), tempo(-1), idCorrida(-1), estado(1), origem({-1.0, -1.0}), destino({-1.0, -1.0})
+    : id(-1), tempo(-1.0), idCorrida(-1), estado(1), origem({-1.0, -1.0}), destino({-1.0, -1.0})
 {
 
 }
 
-Demanda::Demanda(int id, int tempo, Ponto origem, Ponto destino)
+Demanda::Demanda(int id, double tempo, Ponto origem, Ponto destino)
     : id(id), tempo(tempo), origem(origem), destino(destino)
 {
 
