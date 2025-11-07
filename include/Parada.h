@@ -2,6 +2,7 @@
 #define PARADA_H
 
 #include "../include/Demanda.h"
+#include "../include/Ponto.h"
 
 class Parada{
     private:
