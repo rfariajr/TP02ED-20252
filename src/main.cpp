@@ -2,6 +2,7 @@
 
 #include "../include/Demanda.h"
 #include "../include/Parada.h"
+#include "../include/Ponto.h"
 
 int main() {
     /*

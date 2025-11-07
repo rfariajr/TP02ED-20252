@@ -1,12 +1,7 @@
 #ifndef DEMANDA_H
 #define DEMANDA_H
 
-struct Ponto{
-    double x, y;
-    bool operator==(const Ponto& outro) const {        
-        return (x == outro.x && y == outro.y);
-    }
-};
+#include "../include/Ponto.h"
 
 class Demanda {
     private:
