@@ -4,8 +4,8 @@
 #include "../include/Parada.h"
 
 struct Trecho {
-    No* origem;
-    No* destino;
+    Parada* origem;
+    Parada* destino;
     double duracao;
     double distancia;
     int tipo; //0 -coleta (duas paradas de embarque), 1 - entrega (duas paradas de desembarque), 2 - deslocamento (embarque e desembarque)
@@ -25,7 +25,7 @@ class listaTrecho {
 
     }
 
-    void insereFim(No* origem, No* destino, double duracao, double distancia, int tipo);
+    void insereFim(Parada* origem, Parada* destino, double duracao, double distancia, int tipo);
 
     ~listaTrecho();
 };
