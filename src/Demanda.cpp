@@ -20,6 +20,10 @@ void Demanda::printaDemanda() {
     std::cout << ", tempo: " << tempo << std::endl;
 }
 
+Ponto Demanda::retornaOrigem() {
+    return origem;
+}
+
 Demanda::~Demanda() {
 
 }

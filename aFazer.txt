@@ -1,3 +1,4 @@
-- Alterar todas a variaveis relacionadas ao tempo para double
-- Alterar o tad Parada. Uma Parada é um par (origem - destino) para cada corrida
+- Alterar todas a variaveis relacionadas ao tempo para double (CONCLUÍDO)
+- Alterar o tad Parada. Uma Parada é um par (origem - destino) para cada corrida (CONCLUÍDO)
 - Procurar separar o struct ponto em um header própio. Aparece em Demanda.h e Parada.h
+- Verificar as variáveis idCorrida e estado no TAD Demanda. Não estão sendo definidas pelo construtor

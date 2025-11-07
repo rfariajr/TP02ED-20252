@@ -1,7 +1,7 @@
 #include "../include/Trecho.h"
 #include "../include/Parada.h"
 
-void listaTrecho::insereFim(No* origem, No* destino, double duracao, double distancia, int tipo) {
+void listaTrecho::insereFim(Parada* origem, Parada* destino, double duracao, double distancia, int tipo) {
     Trecho* novoTrecho = new Trecho{origem, destino, duracao, distancia, tipo, nullptr}; 
     if(inicio == nullptr) {
         inicio = novoTrecho;

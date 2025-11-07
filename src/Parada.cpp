@@ -1,8 +1,24 @@
 #include <iostream>
 
 #include "../include/Parada.h"
+#include "../include/Demanda.h"
 
-void Parada::inserirFim(int tipo, int idDemanda, Ponto coordenada) {
+Parada::Parada(Demanda* demandaAssociada, Ponto* coordenada) {
+    this->demandaAssociada = demandaAssociada;
+    this->coordenada = coordenada;
+    if(*coordenada == demandaAssociada->retornaOrigem()) {
+        tipo = true;
+    }
+    else{
+        tipo = false;
+    }
+}
+
+Parada::~Parada() {
+
+}
+
+/*void Parada::inserirFim(int tipo, int idDemanda, Ponto coordenada) {
     No* novoNo = new No(tipo, idDemanda, coordenada);
 
     if(tam == 0) {
@@ -46,4 +62,4 @@ Parada::~Parada() {
     inicio = nullptr;
     fim = nullptr;
     tam = 0;
-}
+}*/

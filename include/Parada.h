@@ -3,6 +3,19 @@
 
 #include "../include/Demanda.h"
 
+class Parada{
+    private:
+    Demanda* demandaAssociada;
+    Ponto* coordenada;
+    bool tipo; //true - embarque, false - desembarque
+
+    public:
+    Parada(Demanda* demandaAssociada, Ponto* coordenada);
+
+    ~Parada();
+};
+
+/*
 class No {
     public:
     int tipo; //0 - embarque, 1 - desembarque
@@ -36,6 +49,6 @@ class Parada {
 
     ~Parada();
 };
-
+*/
 
 #endif
