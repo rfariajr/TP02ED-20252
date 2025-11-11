@@ -1,5 +1,7 @@
 - Alterar todas a variaveis relacionadas ao tempo para double (CONCLUÍDO)
 - Alterar o tad Parada. Uma Parada é um par (origem - destino) para cada corrida (CONCLUÍDO)
 - Separar o struct ponto em um header própio. Aparece em Demanda.h, Parada.h e main.cpp (CONCLUÍDO)
+- Implementar o template lista
+- Usar o template lista no Trecho.h e Corrida.h
 - Implementar o TAD Corrida
 - Verificar as variáveis idCorrida e estado no TAD Demanda. Não estão sendo definidas pelo construtor
