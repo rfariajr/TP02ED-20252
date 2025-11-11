@@ -3,6 +3,8 @@
 #include "../include/Demanda.h"
 #include "../include/Parada.h"
 #include "../include/Ponto.h"
+#include "../include/Trecho.h"
+#include "../include/Lista.h"
 
 int main() {
     /*
@@ -26,6 +28,7 @@ int main() {
     std::cin >> numDemandas;
 
     Demanda v[numDemandas];
+    Parada p[numDemandas][2];    
     
     int id;
     double tempo;
@@ -35,7 +38,19 @@ int main() {
     for(int i = 0; i < numDemandas; ++i) {
         std::cin >> id >> tempo >> origem.x >> origem.y >> destino.x >> destino.y;
         v[i] = Demanda(id, tempo, origem, destino);
+        p[i][0] = Parada(&v[i], origem, true);
+        p[i][1] = Parada(&v[i], destino, false);        
     }
+
+    //Testando o template de lista encadeada
+    
+    ListaTrechos listaT;
+    for(int i = 0; i < numDemandas; ++i) {
+        Trecho t(&p[i][0], &p[i][1], 1.23, 2.0, 1);
+        listaT.insereFim(t);
+    }
+    
+    
 
     //Printa as informações recebidas para fins de debug
     for(int i = 0; i < 6; ++i) {
