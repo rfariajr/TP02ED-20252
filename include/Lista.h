@@ -1,6 +1,8 @@
 #ifndef LISTA_HPP
 #define LISTA_HPP
 
+#include <iostream>
+
 template <typename T>
 struct No {
     T dado;
@@ -22,7 +24,7 @@ class Lista {
     Lista() : inicio(nullptr), fim(nullptr), tam(0) {}
     
     void insereFim(const T& valor);
-    int obterTamanho();
+    int obterTamanho();    
 
     ~Lista();
 };

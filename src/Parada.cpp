@@ -3,10 +3,10 @@
 #include "../include/Parada.h"
 #include "../include/Demanda.h"
 
-Parada::Parada(Demanda* demandaAssociada, Ponto* coordenada) {
+Parada::Parada(Demanda* demandaAssociada, Ponto coordenada, bool tipo) {
     this->demandaAssociada = demandaAssociada;
     this->coordenada = coordenada;
-    if(*coordenada == demandaAssociada->retornaOrigem()) {
+    if(coordenada == demandaAssociada->retornaOrigem()) {
         tipo = true;
     }
     else{

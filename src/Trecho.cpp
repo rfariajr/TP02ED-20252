@@ -1,4 +1,4 @@
-#include "../include/Trecho.h"
+/*#include "../include/Trecho.h"
 #include "../include/Parada.h"
 
 void listaTrecho::insereFim(Parada* origem, Parada* destino, double duracao, double distancia, int tipo) {
@@ -26,3 +26,4 @@ listaTrecho::~listaTrecho() {
     fim = nullptr;
     tam = 0;
 }
+*/
